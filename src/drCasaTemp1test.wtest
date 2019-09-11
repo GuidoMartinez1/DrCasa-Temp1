@@ -1,0 +1,12 @@
+import drCasaTemp1.*
+
+describe "Enfermedades"{
+	
+	test "frank sabe contraer enfermedades" {
+		var frank = new Persona()
+		var malaria800 = new EnfermedadInfecciosa()
+		malaria800.cantidadDeCelulasAmenazadas(800)
+		frank.contraerEnfermedad(malaria800)
+		assert.that(frank.tiene(malaria800))
+	}
+}
